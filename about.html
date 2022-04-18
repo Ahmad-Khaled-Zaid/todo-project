@@ -6,30 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about</title>
+    <link rel="stylesheet" href="./style//about.css">
 </head>
 
 <body>
     <header>
-        <h1>to-do</h1>
-        <a href="index.html">Home</a>
-        <img src="./assets/todoPic2.png" alt="to-do-picture">
+        <img src="./assets/todonew.jpg" alt="to-do-picture">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </div>
+
     </header>
     <main>
-        <section>
-            <h2>Ahmad Khaled Zaid</h2>
-            <p>Industrial Engineer and full stack developer</p>
+        <section class="Hero">
             <img src="./assets/myPic.jfif" alt="AhmadPic">
+            <div>
+                <h2>Ahmad Khaled Zaid</h2>
+                <p>Industrial Engineer and full stack developer</p>
+            </div>
+
         </section>
         <form>
-            <fieldset>
                 <label for="name">Name</label>
                 <input type="text" id="name">
+                <br>
                 <label for="email">Email</label>
                 <input type="email" id="email">
-                <label for="message">message</label>
+                <br>
+
+                <label for="message">Message</label>
                 <input type="text" id="message">
-                <input type="submit">
-            </fieldset>
+                <br>
+
+                <input id="submit" type="submit">
         </form>
     </main>
     <footer>
