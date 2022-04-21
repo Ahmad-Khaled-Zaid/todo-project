@@ -5,14 +5,16 @@ let age = prompt("Please Enter your age");
 if (age == 0) {
   alert(`your age is Zero!! `);
 }
-let residence = prompt("where do you live?");
-let job = prompt("What do you do for living?");
-let maritalٍStatus = prompt("Are you Married?");
+let residence = confirm("Do you live in Jordan?");
+let job = confirm("Are you a programmer?");
+let maritalٍStatus = confirm("Are you Married?");
+
 let response = [];
 response.push(Name, gender, age, residence, job, maritalٍStatus);
+
 function validation() {
   for (let i = 0; i < response.length; i++) {
-    if (response[i] === "") {
+    if (response[i] === "" || response[i] === null) {
       response[i] = "invalid";
     }
   }
