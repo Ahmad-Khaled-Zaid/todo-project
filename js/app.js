@@ -5,10 +5,29 @@ let age = prompt("Please Enter your age");
 if (age == 0) {
   alert(`your age is Zero!! `);
 }
-let residence = confirm("Do you live in Jordan?");
-let job = confirm("Are you a programmer?");
-let maritalٍStatus = confirm("Are you Married?");
-
+let residence = prompt("Do you live in Jordan?,Please Enter yes or no");
+residence = residence.toLowerCase();
+while (
+  residence !== "yes" &&
+  residence !== "no" &&
+  residence !== "" &&
+  residence !== null
+) {
+  residence = prompt("Do you live in Jordan?,Please Enter yes or no");
+}
+let job = prompt("Are you a programmer?,Please Enter yes or no");
+while (job !== "yes" && job !== "no" && job !== "" && job !== null) {
+  job = prompt("Are you a programmer?,Please Enter yes or no");
+}
+let maritalٍStatus = prompt("Are you Married?,Please Enter yes or no");
+while (
+  maritalٍStatus !== "yes" &&
+  maritalٍStatus !== "no" &&
+  maritalٍStatus !== "" &&
+  maritalٍStatus !== null
+) {
+  maritalٍStatus = prompt("Are you Married?,Please Enter yes or no");
+}
 let response = [];
 response.push(Name, gender, age, residence, job, maritalٍStatus);
 
